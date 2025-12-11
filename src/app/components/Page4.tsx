@@ -31,7 +31,7 @@ const Page4 = () => {
                         <li>
                             <span className='flex justify-center items-center text-gray-700 gap-3'>
                                 <IoMdMail size={24} />
-                                <h1 className='text-left text-lg'>investordelights@gmail.com</h1>
+                                <h1 className='text-left text-lg'>sales@monarquegreenbay.in</h1>
                             </span>
                         </li>
                     </ul>
@@ -40,8 +40,11 @@ const Page4 = () => {
                 <div className='w-[40%] h-full flex justify-center items-center'>
                     <form
                         className="w-[25vw] h-[22vw] mx-auto bg-white shadow-lg rounded-xl p-6 space-y-5"
+                        action="https://api.web3forms.com/submit" 
+                        method="POST"
                     >
                         <h2 className="text-2xl font-semibold text-gray-800">Enquire Now</h2>
+                        <input type="hidden" name="access_key" value="5834a222-c34a-496f-9aaf-5e243f3e6f15"></input>
 
                         {/* Name */}
                         <div>
@@ -51,7 +54,7 @@ const Page4 = () => {
                             <input
                                 type="text"
                                 name="name"
-                                className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none"
+                                className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none text-black"
                                 placeholder="Enter your name"
                             />
                         </div>
@@ -64,7 +67,8 @@ const Page4 = () => {
                             <input
                                 type="email"
                                 name="email"
-                                className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none"
+                                required
+                                className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none text-black"
                                 placeholder="Enter your email"
                             />
                         </div>
@@ -76,9 +80,10 @@ const Page4 = () => {
                             </label>
                             <input
                                 type="tel"
+                                required
                                 name="phone"
 
-                                className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none"
+                                className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-purple-500 focus:outline-none text-black"
                                 placeholder="Enter your phone number"
                             />
                         </div>
