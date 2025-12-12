@@ -16,7 +16,7 @@ export default () => {
         disableOnInteraction: true
       } }
       loop={true}
-      className='h-[90vh] w-full flex justify-center items-center'
+      className='h-[92vh] w-full flex justify-center items-center'
     >
       <SwiperSlide>
         <img className='h-full w-full object-center' src="https://images.unsplash.com/photo-1445359179985-460648949e10?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="" />
